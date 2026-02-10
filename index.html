@@ -26,7 +26,7 @@
             </ul>
         </nav>
     </header>
-    
+
     <Section id="Sobre"><!--Usado para determinar uma seção-->
         <h2>Sobre mim</h2><!--Segundo titulo da pagina-->
         <img src="Cachorro.jpeg" alt="Imagem de foto de perfil" title="Imagem de Perfil de Alfredo">
@@ -46,7 +46,7 @@
             </ul>
         </aside>
     </Section>
-    
+
     <section id="Projetos">
         <h2>Projeto</h2>
         <article>
@@ -58,11 +58,37 @@
             <section id="Contatos">
                 <h2>Contatos</h2>
                 <p>Tem um projeto em mente? Entre em contato.</p>
-                <address><!--Usado para Adicionar uma forma de contato-->
-                    <a href=""></a><!--Usado para fazer com um texto se transforme em link-->
-                    E-mail: <a href="mailto:fernando.adr13pk@gmail.com">fernando.adr13pk@gmail.com</a><br>
-                    Telefone: <a href="tel:+55 (48) 99697-2862">(48) 99697-2862</a>
-                </address>
+
+                <form action="">
+
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="name" id="name" required><br>
+
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" id="email" required><br>
+
+                    <label for="telefone">Telefone: </label>
+                    <input type="tel" name="telefone" id="telefone"><br>
+
+                    <label for="assunto">Assunto: </label>
+                    <select name="assunto" id="assunto">
+                        <option value="orcamento">Orçamento</option>
+                        <option value="duvida">Duvida</option>
+                        <option value="outro">Outro</option>
+                    </select>
+
+                    <br>
+                    <label for="mensagem">Mensagem: </label>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="5" required></textarea>
+                    <br>
+                    <input type="checkbox" id="inscriçao" name="inscriçao">
+                    <label for="inscriçao">Deseja receber minha Newletter? Fique por dentro.</label>
+                    <br>
+
+                    <input type="submit" value="Enviar mensagem">
+
+                </form>
+
             </section>
         </footer>
     </section>
