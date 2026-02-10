@@ -10,36 +10,36 @@
 
 <body><!--Corpo da pagina-->
     <header><!--Cabecalho da pagina-->
-        <h1>Olá eu sou o alfredo</h1><!--Titulo do corpo da pagina-->
-        <nav> <!--Seção de navegação do site-->
+        <h1>Olá eu sou o alfredo</h1><!--<h1aoh6> são titulos do maior ao menor-->
+        <nav><!--Seção de navegação do site-->
             <ul><!--Lista não ordenada para links do nosso menu-->
-                <li><a href="#Sobre">Sobre mim</a></li>
+                <li><a href="#Sobre">Sobre mim</a></li><!--<li> Tag de lista ñ ordenada-->
                 <li><a href="#Projetos">Projetos</a></li>
+                <!--<a href="">Tag para direcionar o usuário a uma parte do seu site ou um link externo-->
                 <li><a href="#Contatos">Contatos</a></li>
                 <li><a href="http://google.com.br">Google</a></li>
-                <!--href é muito utilizado para referenciar um local especifico
-                da sua web ou um link externo seja ele google entre outros-->
                 <li><a href="http://google.com.br" target="_blank">Google</a></li>
-                <!--target="_blank" É de uso primordial, pois faz com que o usuário 
-                continue no seu site. Ele até gera uma nova aba, mas no fim
-                continua na sua página em plano secundário-->
+                <!--<a href="" target="_blank"> Usada para redirecionaro o usuario a uma outra pagina do seu site, ou um site externo
+                    Uso Primordial para fazer com que o usuario continue no seu site em segundo plano-->
             </ul>
         </nav>
     </header>
 
     <Section id="Sobre"><!--Usado para determinar uma seção-->
-        <h2>Sobre mim</h2><!--Segundo titulo da pagina-->
-        <img src="Cachorro.jpeg" alt="Imagem de foto de perfil" title="Imagem de Perfil de Alfredo" width="150" height="150">
-        <!--Img- Forma de anexar uma imagem no site-->
-        <!--Title Serve para itribuir uma informação a um elemento.-->
+        <!--O id="" colocado depois, serve para identificar uma parte do seu site quando o usuario clicar ele sera redirecionado para cá-->
+        <h2>Sobre mim</h2>
+        <img src="Cachorro.jpeg" alt="Imagem de foto de perfil" title="Imagem de Perfil de Alfredo" width="150"
+            height="150">
+        <!--Img serve para anexar uma imagem no seu site. src="local aonde está o arquivo: seja interno no computador ou link no navegador"
+    alt="quando ñ aparecer a foto, essa será a mensagem que aparecera."
+        title="serve para dar o nome do arquivo"
+            width="especificar o tamanho da img."-->
         <article><!--Artigo-->
-            <p><!--Paragrafo-->
-                Eu sou o Fredolino, estou desenvolvendo um site.
-            </p>
+            <p>Eu sou o Fredolino, estou desenvolvendo um site.</p><!--Tag <p> Paragrafo-->
         </article>
-        <aside>
+        <aside><!--relacionada informações complementares-->
             <h3>Habilidades</h3>
-            <ul> <!--Usado para criar artigos-->
+            <ul> <!--Usado para criar listar ñ ordenada, essa aqui abre a lista-->
                 <li>HTML</li><!--Usado para criar uma lista ñ ordenada-->
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -58,12 +58,14 @@
             <section id="Contatos">
                 <h2>Contatos</h2>
                 <p>Tem um projeto em mente? Entre em contato.</p>
-
-                <!--Formularios e Entradas-->
-                <form action=""><!--Criando o primeiro formulario.-->
-
-                    <label for="nome">Nome: </label>
-                    <input type="text" name="name" id="name" required><br>
+                <!--Criando o primeiro fomulario-->
+                <form action=""><!--Tag form action="" abre a parte de formulario-->
+                    <label for="nome">Nome: </label><!--Tag label for="" Define uma legenda para elementos do formulario
+                        geralmente é atribuida a Tag input usando o atributo id=""-->
+                    <input type="text" name="name" id="name" required><br><!--Tag input type="" name="" id=""usado para que o usuario possa preencher o campo
+                        type="determina que tipo será o preechimento, podendo variar de texto, email, tel..."
+                            name="nome do usuario preenchido igual ao id=""
+                                required="determina que este campo deve ser obrigatório o preechimento"-->
 
                     <label for="email">E-mail: </label>
                     <input type="email" name="email" id="email" required><br>
@@ -72,66 +74,62 @@
                     <input type="tel" name="telefone" id="telefone"><br>
 
                     <label for="assunto">Assunto: </label>
-                    <select name="assunto" id="assunto">
-                        <option value="orcamento">Orçamento</option>
+                    <select name="assunto"
+                        id="assunto"><!--Tag <select name="" id="">, vai criar uma caixa de seleção com opções a ser escolhida-->
+                        <option value="orcamento">Orçamento</option><!--Tag <option value="">, junto ao select name="" id=""
+                            determina as opções dentro da caixa de seleção-->
                         <option value="duvida">Duvida</option>
                         <option value="outro">Outro</option>
                     </select>
 
-                    <br>
+                    <br><!--Tag <br> Usado para quebrar uma linha-->
                     <label for="mensagem">Mensagem: </label>
                     <textarea name="mensagem" id="mensagem" cols="30" rows="5" required></textarea>
+                    <!--Tag <textarea> Usado para criar um campo/caixa, para escrever uma mensagem-->
                     <br>
                     <input type="checkbox" id="inscriçao" name="inscriçao">
+                    <!--Tag<input type="checkbox"> cria uma caixinha de seleção, geralmente atribuida a permição-->
                     <label for="inscriçao">Deseja receber minha Newletter? Fique por dentro.</label>
                     <br>
-
-                    <input type="submit" value="Enviar mensagem">
-
-                    <input type="date">
+                    <input type="submit"
+                        value="Enviar mensagem"><!--Tag<input="submit"> cria um botão para enviar ou qualquer outra ação-->
+                    <input type="date"><!--Tag<input="data" cria uma caixa para selecionar uma data-->
 
                 </form>
-                <!--Formularios e Entradas-->
 
-                <Section></Section>
-                    <h2>Habilidades e Tecnologias</h2> <!--Criando Tabelas e Estruturas-->
-                    
-                    <table> <!--Tag de Tabela <table>-->
-                        <thead> <!--Primeira Linha/Titulo <thead>-->
-                            <tr> <!--Primeira linha da Tabela <tr>-->
-                                <th>Tecnologia</th> <!--Colunas da tabela <th>-->
+                <Section>
+                <!--Criando Tabelas e Estruturas-->
+                    <h2>Habilidades e Tecnologias</h2>
+                    <table> <!--<table>Tag que define o corpo da tabela-->
+                        <thead> <!--<thead>Tag para corpo do titulo/primeira linha-->
+                            <tr> <!--<tr>Tag Primeira linha da Tabela-->
+                                <th>Tecnologia</th> <!--<th>Tag colunas da tabela-->
                                 <th>Nível</th>
                                 <th>Descrição</th>
                             </tr>
                         </thead>
-                            <tbody> <!--Corpor da tabela <tbody>-->
-
-                                <tr>
-                                    <td>HTML</td>
-                                    <td>Iniciante</td>
-                                    <td>Capas de construir estruturas de Pasginas web semanticas e responsaveis</td>
-                                </tr>
-
-                                <tr>
-                                    <td>CSS</td>
-                                    <td>Intermediario</td>
-                                    <td>Experiencias com flexbox grid e animações CSS</td>
-                                </tr>
-                                
-                                <tr>
-                                    <td>JavaScript</td>
-                                    <td>Básico</td>
-                                    <td>Desenvolvimento de scripts do lado do cliente para interações.</td>
-                                </tr>
-                            </tbody>
+                        <tbody> <!--<tbody>Tag corpor da tabela após o titulo-->
+                            <tr><!--1º apos o titulo-->
+                                <td>HTML</td><!--<td>Tag dados que são inseridos dentro de uma celula-->
+                                <td>Iniciante</td>
+                                <td>Capas de construir estruturas de Pasginas web semanticas e responsaveis</td>
+                            </tr>
+                            <tr><!--2º linha-->
+                                <td>CSS</td>
+                                <td>Intermediario</td>
+                                <td>Experiencias com flexbox grid e animações CSS</td>
+                            </tr>
+                            <tr><!--3º linha-->
+                                <td>JavaScript</td>
+                                <td>Básico</td>
+                                <td>Desenvolvimento de scripts do lado do cliente para interações.</td>
+                            </tr>
+                        </tbody>
                     </table>
-
                 </Section>
-
             </section>
         </footer>
     </section>
-
 </body>
 
 </html>
