@@ -29,7 +29,7 @@
 
     <Section id="Sobre"><!--Usado para determinar uma seção-->
         <h2>Sobre mim</h2><!--Segundo titulo da pagina-->
-        <img src="Cachorro.jpeg" alt="Imagem de foto de perfil" title="Imagem de Perfil de Alfredo">
+        <img src="Cachorro.jpeg" alt="Imagem de foto de perfil" title="Imagem de Perfil de Alfredo" width="150" height="150">
         <!--Img- Forma de anexar uma imagem no site-->
         <!--Title Serve para itribuir uma informação a um elemento.-->
         <article><!--Artigo-->
@@ -59,7 +59,8 @@
                 <h2>Contatos</h2>
                 <p>Tem um projeto em mente? Entre em contato.</p>
 
-                <form action="">
+                <!--Formularios e Entradas-->
+                <form action=""><!--Criando o primeiro formulario.-->
 
                     <label for="nome">Nome: </label>
                     <input type="text" name="name" id="name" required><br>
@@ -87,7 +88,45 @@
 
                     <input type="submit" value="Enviar mensagem">
 
+                    <input type="date">
+
                 </form>
+                <!--Formularios e Entradas-->
+
+                <Section></Section>
+                    <h2>Habilidades e Tecnologias</h2> <!--Criando Tabelas e Estruturas-->
+                    
+                    <table> <!--Tag de Tabela <table>-->
+                        <thead> <!--Primeira Linha/Titulo <thead>-->
+                            <tr> <!--Primeira linha da Tabela <tr>-->
+                                <th>Tecnologia</th> <!--Colunas da tabela <th>-->
+                                <th>Nível</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                            <tbody> <!--Corpor da tabela <tbody>-->
+
+                                <tr>
+                                    <td>HTML</td>
+                                    <td>Iniciante</td>
+                                    <td>Capas de construir estruturas de Pasginas web semanticas e responsaveis</td>
+                                </tr>
+
+                                <tr>
+                                    <td>CSS</td>
+                                    <td>Intermediario</td>
+                                    <td>Experiencias com flexbox grid e animações CSS</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>JavaScript</td>
+                                    <td>Básico</td>
+                                    <td>Desenvolvimento de scripts do lado do cliente para interações.</td>
+                                </tr>
+                            </tbody>
+                    </table>
+
+                </Section>
 
             </section>
         </footer>
