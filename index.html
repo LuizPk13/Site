@@ -1,0 +1,72 @@
+<!--Só de digitar HTML, já vem um breve inicio do que devemos fazer.-->
+<!DOCTYPE html>
+<html lang="pr-br"><!--Mudar para nossa linguagem caso esteja trabalhando de fato nela-->
+
+<head><!--Titulo da pagina-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfredo</title>
+</head>
+
+<body><!--Corpo da pagina-->
+    <header><!--Cabecalho da pagina-->
+        <h1>Olá eu sou o alfredo pintudo</h1><!--Titulo do corpo da pagina-->
+        <nav> <!--Seção de navegação do site-->
+            <ul><!--Lista não ordenada para links do nosso menu-->
+                <li><a href="#Sobre">Sobre mim</a></li>
+                <li><a href="#Projetos">Projetos</a></li>
+                <li><a href="#Contatos">Contatos</a></li>
+                <li><a href="http://google.com.br">Google</a></li>
+                <!--href é muito utilizado para referenciar um local especifico
+                da sua web ou um link externo seja ele google entre outros-->
+                <li><a href="http://google.com.br" target="_blank">Google</a></li>
+                <!--target="_blank" É de uso primordial, pois faz com que o usuário 
+                continue no seu site. Ele até gera uma nova aba, mas no fim
+                continua na sua página em plano secundário-->
+            </ul>
+        </nav>
+    </header>
+    
+    <Section id="Sobre"><!--Usado para determinar uma seção-->
+        <h2>Sobre mim</h2><!--Segundo titulo da pagina-->
+        <img src="Cachorro.jpeg" alt="Imagem de foto de perfil" title="Imagem de Perfil de Alfredo">
+        <!--Img- Forma de anexar uma imagem no site-->
+        <!--Title Serve para itribuir uma informação a um elemento.-->
+        <article><!--Artigo-->
+            <p><!--Paragrafo-->
+                Eu sou o Fredolino, estou desenvolvendo um site.
+            </p>
+        </article>
+        <aside>
+            <h3>Habilidades</h3>
+            <ul> <!--Usado para criar artigos-->
+                <li>HTML</li><!--Usado para criar uma lista ñ ordenada-->
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </aside>
+    </Section>
+    
+    <section id="Projetos">
+        <h2>Projeto</h2>
+        <article>
+            <h3>Portifólio</h3>
+            <p>Este foi o primeiro site que desenvolvi, estudando Front-End</p>
+        </article>
+        <footer><!--Usado para ser o roda-pé-->
+            <p>Direitos reservados ao alfredo</p>
+            <section id="Contatos">
+                <h2>Contatos</h2>
+                <p>Tem um projeto em mente? Entre em contato.</p>
+                <address><!--Usado para Adicionar uma forma de contato-->
+                    <a href=""></a><!--Usado para fazer com um texto se transforme em link-->
+                    E-mail: <a href="mailto:fernando.adr13pk@gmail.com">fernando.adr13pk@gmail.com</a><br>
+                    Telefone: <a href="tel:+55 (48) 99697-2862">(48) 99697-2862</a>
+                </address>
+            </section>
+        </footer>
+    </section>
+
+</body>
+
+</html>
