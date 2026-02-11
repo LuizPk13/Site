@@ -1,6 +1,6 @@
 <!--Só de digitar HTML, já vem um breve inicio do que devemos fazer.-->
 <!DOCTYPE html>
-<html lang="pr-br"><!--Mudar para nossa linguagem caso esteja trabalhando de fato nela-->
+<html lang="pt-br"><!--Mudar para nossa linguagem caso esteja trabalhando de fato nela-->
 
 <head><!--Titulo da pagina-->
     <meta charset="UTF-8">
@@ -26,7 +26,7 @@
         </nav>
     </header>
 
-    <Section id="Sobre"><!--Usado para determinar uma seção-->
+    <section id="Sobre"><!--Usado para determinar uma seção-->
         <!--O id="" colocado depois, serve para identificar uma parte do seu site quando o usuario clicar ele sera redirecionado para cá-->
         <h2>Sobre mim</h2>
         <img src="Cachorro.jpeg" alt="Imagem de foto de perfil" title="Imagem de Perfil de Alfredo" width="150"
@@ -46,7 +46,7 @@
                 <li>JavaScript</li>
             </ul>
         </aside>
-    </Section>
+    </section>
 
     <section id="Projetos">
         <h2>Projeto</h2>
@@ -63,7 +63,7 @@
                 <form action=""><!--Tag form action="" abre a parte de formulario-->
                     <label for="nome">Nome: </label><!--Tag label for="" Define uma legenda para elementos do formulario
                         geralmente é atribuida a Tag input usando o atributo id=""-->
-                    <input type="text" name="nome" id="name" required><br><!--Tag input type="" name="" id=""usado para que o usuario possa preencher o campo
+                    <input type="text" name="nome" id="nome" required><br><!--Tag input type="" name="" id=""usado para que o usuario possa preencher o campo
                         type="determina que tipo será o preechimento, podendo variar de texto, email, tel..."
                             name="nome do usuario preenchido igual ao id=""
                                 required="determina que este campo deve ser obrigatório o preechimento"-->
@@ -98,7 +98,7 @@
 
                 </form>
 
-                <Section>
+                <section>
                     <!--Criando Tabelas e Estruturas-->
                     <h2>Habilidades e Tecnologias</h2>
                     <table> <!--<table>Tag que define o corpo da tabela-->
@@ -127,54 +127,31 @@
                             </tr>
                         </tbody>
                     </table>
-                </Section>
+                </section>
             </section>
         </footer>
     </section>
-    <section><br>
-        <h2>Desafio da Aula 06</h2>
-        <p>Criar uma um novo formulário com os seguintes campos:</p>
-        <ul>
-            <li>Nome completo.</li>
-            <li>E-mail.</li>
-            <li>Idade.</li>
-            <li>Para qual matéria você está se condidatando para lecionar?</li>
-            Matemática, Português, Biologia, Ciências, História, Geografia, Artes, Outros.
-            <li>Nível de escolaridade:</li>
-            Ensino Superior Completo, Cursando Mestrado, Mestrado Completo, Cursando Doutorado, Doutorado Completo,
-            Outros.
-            <li>Descrição sobre si mesmo.</li>
-        </ul>
-        <h3>Regras</h3>
-        <ul>
-            <li>O form deve ter id e nome de"form".</li>
-            <li>Os nomes dos campos devem ser, respectivamente:</li>
-            Nome, E-mail, Idade, Assunto, Turnos Disponíveis, Escolaridade, Descrição.
-            <li>O campo com as Opções de Matérias deve ter um id também.</li>
-            <li>Código precisa ser semântico e com acessibilidade.</li>
-        </ul>
-    </section>
 
-    <Section>
+    <section>
         <h1>Cadastro de formulário</h1>
 
         <form id="form" name="form" action="">
             <div>
-                <label for="nome">Nome completo: </label>
-                <input type="text" name="nome" id="nome">
+                <label for="nome-formulario">Nome completo: </label>
+                <input type="text" name="nome-formulario" id="nome-formulario">
             </div>
             <div>
-                <label for="email">E-mail: </label>
-                <input type="email" name="email" id="email">
+                <label for="email-formulario">E-mail: </label>
+                <input type="email" name="email-formulario" id="email-formulario">
             </div>
             <div>
-                <label for="idade">Idade: </label>
-                <input type="number" name="idade" id="idade" min="0">
+                <label for="idade-formulario">Idade: </label>
+                <input type="number" name="idade-formulario" id="idade-formulario" min="0">
             </div>
             <div>
-                <label for="assunto">Para qual matéria você está se candidatando para lecionar?</label>
-                <select name="assunto" id="assunto">
-                    <option value="matetica">Matemática</option>
+                <label for="assunto-formulario">Para qual matéria você está se candidatando para lecionar?</label>
+                <select name="assunto-formulario" id="assunto-formulario">
+                    <option value="matematica">Matemática</option>
                     <option value="portugues">Português</option>
                     <option value="biologia">Biologia</option>
                     <option value="ciencias">Ciências</option>
@@ -185,8 +162,8 @@
                 </select>
             </div>
             <div>
-                <label for="escolaridade">Nível de escolaridade: </label>
-                <select name="escolaridade" id="escolaridade">
+                <label for="escolaridade-formulario">Nível de escolaridade: </label>
+                <select name="escolaridade-formulario" id="escolaridade-formulario">
                     <option value="superior-completo">Ensino Superior completo</option>
                     <option value="cursando-mestrado">Cursando Mestrado</option>
                     <option value="mestrado-completo">Mestrado Completo</option>
@@ -214,7 +191,7 @@
             </div>
             <button type="submit">Enviar</button>
         </form>
-    </Section>
+    </section>
 
 </body>
 
