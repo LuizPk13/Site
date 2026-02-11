@@ -17,8 +17,9 @@
                 <li><a href="#Projetos">Projetos</a></li>
                 <!--<a href="">Tag para direcionar o usuário a uma parte do seu site ou um link externo-->
                 <li><a href="#Contatos">Contatos</a></li>
-                <li><a href="http://google.com.br">Google</a></li>
-                <li><a href="http://google.com.br" target="_blank">Google</a></li>
+                <li><a href="#form">Cadastre seu formulário</a></li>
+                <!--<li><a href="http://google.com.br">Google</a></li>-->
+                <!--<li><a href="http://google.com.br" target="_blank">Google</a></li>-->
                 <!--<a href="" target="_blank"> Usada para redirecionaro o usuario a uma outra pagina do seu site, ou um site externo
                     Uso Primordial para fazer com que o usuario continue no seu site em segundo plano-->
             </ul>
@@ -62,7 +63,7 @@
                 <form action=""><!--Tag form action="" abre a parte de formulario-->
                     <label for="nome">Nome: </label><!--Tag label for="" Define uma legenda para elementos do formulario
                         geralmente é atribuida a Tag input usando o atributo id=""-->
-                    <input type="text" name="name" id="name" required><br><!--Tag input type="" name="" id=""usado para que o usuario possa preencher o campo
+                    <input type="text" name="nome" id="name" required><br><!--Tag input type="" name="" id=""usado para que o usuario possa preencher o campo
                         type="determina que tipo será o preechimento, podendo variar de texto, email, tel..."
                             name="nome do usuario preenchido igual ao id=""
                                 required="determina que este campo deve ser obrigatório o preechimento"-->
@@ -74,8 +75,8 @@
                     <input type="tel" name="telefone" id="telefone"><br>
 
                     <label for="assunto">Assunto: </label>
-                    <select name="assunto"
-                        id="assunto"><!--Tag <select name="" id="">, vai criar uma caixa de seleção com opções a ser escolhida-->
+                    <select name="assunto" id="assunto">
+                        <!--Tag <select name="" id="">, vai criar uma caixa de seleção com opções a ser escolhida-->
                         <option value="orcamento">Orçamento</option><!--Tag <option value="">, junto ao select name="" id=""
                             determina as opções dentro da caixa de seleção-->
                         <option value="duvida">Duvida</option>
@@ -98,7 +99,7 @@
                 </form>
 
                 <Section>
-                <!--Criando Tabelas e Estruturas-->
+                    <!--Criando Tabelas e Estruturas-->
                     <h2>Habilidades e Tecnologias</h2>
                     <table> <!--<table>Tag que define o corpo da tabela-->
                         <thead> <!--<thead>Tag para corpo do titulo/primeira linha-->
@@ -130,6 +131,91 @@
             </section>
         </footer>
     </section>
+    <section><br>
+        <h2>Desafio da Aula 06</h2>
+        <p>Criar uma um novo formulário com os seguintes campos:</p>
+        <ul>
+            <li>Nome completo.</li>
+            <li>E-mail.</li>
+            <li>Idade.</li>
+            <li>Para qual matéria você está se condidatando para lecionar?</li>
+            Matemática, Português, Biologia, Ciências, História, Geografia, Artes, Outros.
+            <li>Nível de escolaridade:</li>
+            Ensino Superior Completo, Cursando Mestrado, Mestrado Completo, Cursando Doutorado, Doutorado Completo,
+            Outros.
+            <li>Descrição sobre si mesmo.</li>
+        </ul>
+        <h3>Regras</h3>
+        <ul>
+            <li>O form deve ter id e nome de"form".</li>
+            <li>Os nomes dos campos devem ser, respectivamente:</li>
+            Nome, E-mail, Idade, Assunto, Turnos Disponíveis, Escolaridade, Descrição.
+            <li>O campo com as Opções de Matérias deve ter um id também.</li>
+            <li>Código precisa ser semântico e com acessibilidade.</li>
+        </ul>
+    </section>
+
+    <Section aria-labelledby="titulo-form">
+        <h1 id="titulo-form">Cadastro de formulário</h1>
+
+        <form id="form" name="form" action="">
+            <div>
+                <label for="nome">Nome completo: </label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="idade">Idade: </label>
+                <input type="number" name="idade" id="idade" min="0">
+            </div>
+            <div>
+                <label for="assunto">Para qual matéria você está se candidatando para lecionar?</label>
+                <select name="assunto" id="assunto">
+                    <option value="matetica">Matemática</option>
+                    <option value="portugues">Português</option>
+                    <option value="biologia">Biologia</option>
+                    <option value="ciencias">Ciências</option>
+                    <option value="historia">História</option>
+                    <option value="geografia">Geografia</option>
+                    <option value="artes">Artes</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+            <div>
+                <label for="escolaridade">Nível de escolaridade: </label>
+                <select name="escolaridade" id="escolaridade">
+                    <option value="superior-completo">Ensino Superior completo</option>
+                    <option value="cursando-mestrado">Cursando Mestrado</option>
+                    <option value="mestrado-completo">Mestrado Completo</option>
+                    <option value="cursando-doutorado">Cursando Doutorado</option>
+                    <option value="doutorado-completo">Doutorado Completo</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+            <p>Turnos disponíveis:</p>
+            <div>
+                <input type="checkbox" name="turnos" id="turno-manha" value="manha">
+                <label for="turno-manha">Manhã.</label>
+            </div>
+            <div>
+                <input type="checkbox" name="turnos" id="turno-tarde" value="tarde">
+                <label for="turno-tarde">Tarde.</label>
+            </div>
+            <div>
+                <input type="checkbox" name="turnos" id="turno-noite" value="noite">
+                <label for="turno-noite">Noite.</label>
+            </div>
+            <div>
+                <label for="descricao">Descrição sobre si mesmo:</label>
+                <textarea name="descricao" id="descricao" cols="30" rows="5"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </Section>
+
 </body>
 
 </html>
